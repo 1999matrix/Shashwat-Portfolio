@@ -1,0 +1,64 @@
+.Project{
+    width: fit-content;
+    background-color: transparent;
+    height: fit-content;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    transition-duration: 0.5s;
+
+
+}
+.Project .wallpaper img{
+    width: 40vw;
+    height: 100%;
+    /*height: 23rem;*/
+    border-radius: 25px ;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.Project .icon{
+    border-radius: 10px;
+    width: 4vw;
+    height: 3vw;
+    position: absolute;
+    background: black;
+    bottom: -1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Project .icon img{
+    aspect-ratio: 1/1;
+    object-fit: fill;
+    border-radius: 10px;
+    width: 70%;
+
+}
+
+
+@media (max-width: 786px) {
+
+    .Project .wallpaper{
+        height: 60vw;
+    }
+    .Project .wallpaper img{
+        width: 90vw;
+        height: 50vw;
+        border-radius: 5px ;
+        filter: brightness(1);
+    }
+    .Project .icon{
+        width: 13vw;
+        height: 10vw;
+        bottom: 2vh;
+    }
+    .Project .icon img{
+        border-radius: 10px;
+        width: 60%;
+
+    }
+}

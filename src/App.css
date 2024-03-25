@@ -1,0 +1,112 @@
+:root {
+    --TextColor: #ffffff
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.App {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(160deg, rgba(0, 0, 0, 1) 0%, rgb(40, 26, 65) 50%, rgba(8, 4, 38, 1) 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+
+
+}
+
+.App .GoTop {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    z-index: 10;
+    border-radius: 50%;
+    /*padding: 1.2rem 0;*/
+    width: 3rem;
+    height: 3rem;
+    font-size: 32px;
+    background: black;
+    border: 2px solid rgb(61, 44, 128);
+    color: rgb(61, 44, 128);
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+.App .GoTop:hover {
+    background: rgb(61, 44, 128);
+    color: black;
+}
+.cv {
+    height: 3rem;
+    font-weight: bold;
+    font-size: 19px;
+    position: fixed;
+    right: 2%;
+    bottom: 5vh;
+    background: rgba(2, 2, 2, 0.89);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 7rem;
+    z-index: 10;
+    transition-duration: 0.25s;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(61, 44, 128) ;
+
+}
+.cv:hover {
+    background-color:rgb(61, 44, 128);
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #642a83 rgba(255, 255, 255, 0);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 13px;
+
+}
+
+*::-webkit-scrollbar-track {
+    background: linear-gradient(160deg, rgba(0, 0, 0, 1) 0%, rgb(24, 18, 49) 60%, rgba(8, 4, 38, 1) 100%);
+
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(160deg, rgb(87, 87, 87) 0%, rgb(61, 44, 128) 50%);;
+    border-radius: 10px;
+
+}
+
+
+
+
+@media (max-width: 786px) {
+    .App .GoTop{
+        left: 45%;
+    }
+    .cv{
+        border: none;
+    }
+}
